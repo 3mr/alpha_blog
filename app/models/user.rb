@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_secure_password
+
   # accossiations
   has_many :artiles
 
