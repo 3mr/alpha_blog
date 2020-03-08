@@ -2,7 +2,7 @@ class User < ApplicationRecord
   has_secure_password
 
   # accossiations
-  has_many :artiles
+  has_many :articles
 
   # callbacks
   before_save { self.email = email.downcase }
